@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    --borderWidth: 3px;
+}
+
+body {
+    background-image: linear-gradient(to right, #0c4586, #080808); 
+	background-size: 400% 400%;
+	animation: bgEfecto 15s ease infinite;
+	height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor form {
+    background-color: #0b1222;
+    color: #fff;
+    padding: 30px;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor .form__header span {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(19, 110, 138) 0%, rgb(201, 18, 119) 35%, rgba(0,212,255,1) 100%);
+    background-size: 400% 400%;
+    border-radius: 10px;
+    animation: bgEfecto 15s ease infinite;
+}
+
+.contenedor form:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    background-image: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: bordeAnimado 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+form .form__group {
+    position: relative;
+}
+
+form .form__group input, form .form__group textarea {
+    background-color: inherit;
+    border: 2px solid #00cdfe;
+    outline: none;
+    border-radius: 20px;
+}
+
+form .form__group input{
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    color: #00cdfe;
+}
+
+form .form__group textarea {
+    padding: 20px 0 0 20px;
+    color: #00cdfe;
+    resize: none;
+}
+
+form .form__group label {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    pointer-events: none;
+    color: #00cdfe;
+    background-color: #0b1222;
+    padding: 0 10px;
+    transition: top .3s;
+}
+
+form button {
+    border: 2px solid #00cdfe;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    background-color: inherit;
+    transition: background .5s;
+    outline: none;
+}
+
+form button:hover {
+    background-color: #00cdfe;
+}
+
+.fijar {
+    top: -7px !important;
+}
+
+@keyframes bgEfecto {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  
+@keyframes bordeAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
