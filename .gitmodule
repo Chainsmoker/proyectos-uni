@@ -1,3 +1,3 @@
-[submodule "01-Landing-DW"]
-    path = 01-Landing-DW/
+[submodule "01-Landing-DW/frontend"]
+    path = 01-Landing-DW/frontend
     url = https://github.com/Chainsmoker/proyectos-uni.git
