@@ -1,3 +1,7 @@
 [submodule "01-Landing-DW/frontend"]
     path = 01-Landing-DW/frontend
     url = https://github.com/Chainsmoker/proyectos-uni.git
+
+[submodule "01-Landing-DW/backend"]
+    path = 01-Landing-DW/backend
+    url = https://github.com/Chainsmoker/proyectos-uni.git
